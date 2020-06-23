@@ -20,5 +20,5 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Escuchando en el puerto ${port}`));
